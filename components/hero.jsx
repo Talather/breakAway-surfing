@@ -11,20 +11,24 @@ export default function HeroSection () {
           <span className='text-yellow-300'>New Adventure?</span>
         </h1>
 
-        <p className='mt-4 text-lg text-textColor md:text-xl drop-shadow-md'>
+        <p className='mt-4 text-lg text-blue-50 md:text-xl drop-shadow-md'>
           Ride the waves, embrace the thrill, and experience the ultimate
           freedom on the ocean. Join us today and make unforgettable memories.
         </p>
 
         {/* Button */}
-        <div className='mt-6'>
-          <a
-            href='/book-ride'
-            className='px-6 py-3 text-lg font-semibold text-white transition duration-300 bg-blue-500 rounded-full shadow-lg hover:bg-yellow-400'
-          >
-            Book Ride 🌊
-          </a>
-        </div>
+        <div className='relative mt-6 group'>
+  <a
+    href='/book-ride'
+    className='relative px-6 py-3 overflow-hidden text-lg font-semibold text-black transition duration-300 bg-white rounded-full shadow-lg hover:bg-yellow-400 hover:text-black'
+  >
+    Book Ride 🌊
+    {/* Shiny Effect */}
+    {/* <span className='absolute inset-0 transition duration-300 bg-white opacity-10 group-hover:opacity-30'></span> */}
+    <span className='absolute w-20 h-40 transition-transform duration-700 rotate-45 bg-white rounded-md -left-16 -top-1 opacity-20 group-hover:translate-x-64'></span>
+  </a>
+</div>
+
       </div>
     </section>
   )

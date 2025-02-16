@@ -20,7 +20,7 @@ export default function Home() {
 </div>
 
       
-      <div className='w-screen bg-primaryBg' style={{ height: '40vh' }}>
+      <div className='w-screen bg-primaryBg ' style={{ height: '40vh' }}>
   <JoinCommunity />
 </div>
 

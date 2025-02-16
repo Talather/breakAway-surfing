@@ -2,7 +2,8 @@ import Link from 'next/link'
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 
 
-export default function Footer () {
+export default function Footer() {
+    
   return (
     <footer className='w-full px-8 py-6 bg-secondaryBg text-textColor'>
       <div className='container flex flex-col items-center justify-between mx-auto md:flex-row'>
