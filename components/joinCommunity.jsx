@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export default function JoinCommunity () {
   return (
-    <section className='py-16 text-center text-white bg-gradient-to-r from-[#04bade] to-blue-800'>
+    <section className='w-full lg:min-w-[97vw] py-16 text-center text-white bg-gradient-to-r from-[#04bade] to-blue-800'>
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -49,6 +49,8 @@ export default function JoinCommunity () {
           <FaInstagram />
         </motion.a>
       </div>
-    </section>
+
+
+        </section>
   )
 }

@@ -1,29 +1,32 @@
 import HeroSection from "@/components/hero";
 import JoinCommunity from "@/components/joinCommunity";
+import Testimonials from "@/components/testimonials";
 import UpcomingTrips from "@/components/UpcomingTrips";
 import Image from "next/image";
 
 export default function Home() {
   return (
+    
     <main className="flex flex-col items-center justify-between min-h-screen ">
 
-      <div className="w-screen mt-16 bg-sea" style={{height:'90vh'}}>
-        
-        <HeroSection />
-      </div>
-      
+     <div className="w-full mt-16 bg-[url('/lira.jpg')] bg-cover bg-center min-h-[150vh]">
+  <HeroSection />
+</div>
 
-
-
-      <div className='w-screen bg-primaryBg' style={{ height: '100vh' }}>
+<div className="w-full bg-primaryBg min-h-[90vh] sm:min-h-[80vh] md:min-h-[100vh] lg:min-h-[130vh] flex items-center">
   <UpcomingTrips />
 </div>
 
-      
-      <div className='w-screen bg-primaryBg ' style={{ height: '40vh' }}>
+<div className="w-full bg-primaryBg min-h-[70vh] sm:min-h-[60vh] md:min-h-[79vh] lg:w-full flex items-center md:w-full">
+  <Testimonials />
+</div>
+
+<div className="w-full bg-primaryBg min-h-[40vh] sm:min-h-[30vh] md:min-h-[40vh]  lg:min-w-[97vw]  md:w-full
+ flex items-center">
   <JoinCommunity />
 </div>
 
+      
       
 
       {/* <div className="z-10 items-center justify-between w-full max-w-5xl font-mono text-sm lg:flex">

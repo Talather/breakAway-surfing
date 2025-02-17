@@ -1,11 +1,11 @@
 export default function HeroSection () {
   return (
-    <section className='relative flex items-center justify-center text-center mt-28'>
+    <section className='relative flex items-center justify-center text-center '>
       {/* Background Image */}
-      <div className="absolute inset-0 bg-[url('/surfing-bg.jpg')] bg-cover bg-center brightness-75"></div>
+      <div className="absolute inset-0  bg-cover bg-center brightness-75"></div>
 
       {/* Content */}
-      <div className='relative z-10 max-w-3xl px-6'>
+      <div className='relative z-10 max-w-3xl px-6 mt-28'>
         <h1 className='text-5xl font-bold text-white md:text-6xl drop-shadow-lg'>
           Ready For The Start of a{' '}
           <span className='text-yellow-300'>New Adventure?</span>
@@ -17,18 +17,23 @@ export default function HeroSection () {
         </p>
 
         {/* Button */}
-        <div className='relative mt-6 group'>
-  <a
-    href='/book-ride'
-    className='relative px-6 py-3 overflow-hidden text-lg font-semibold text-black transition duration-300 bg-white rounded-full shadow-lg hover:bg-yellow-400 hover:text-black'
-  >
-    Book Ride 🌊
-    {/* Shiny Effect */}
-    {/* <span className='absolute inset-0 transition duration-300 bg-white opacity-10 group-hover:opacity-30'></span> */}
-    <span className='absolute w-20 h-40 transition-transform duration-700 rotate-45 bg-white rounded-md -left-16 -top-1 opacity-20 group-hover:translate-x-64'></span>
-  </a>
-</div>
 
+
+
+
+       <button className='relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full mt-6 text-md font-medium ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 px-7 py-3 bg-gradient-to-b from-yellow-400 to-yellow-500 text-white shadow-lg overflow-hidden group'>
+    Book Ride 🌊
+  {/* Glossy Overlay */}
+  <span className='absolute inset-0 bg-white/20 opacity-50 group-hover:opacity-70 transition-all duration-500'></span>
+  {/* Shine Effect */}
+  <span className='absolute left-[-150%] top-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white to-transparent rotate-12 opacity-30 group-hover:translate-x-[150%] group-hover:opacity-70 transition-all duration-700 ease-in-out'></span>
+</button>
+
+
+
+        
+
+        
       </div>
     </section>
   )
