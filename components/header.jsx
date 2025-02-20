@@ -8,12 +8,12 @@ export default function Header () {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className='fixed top-0 left-0 z-50 w-full bg-primaryBg shadow-md backdrop-blur-md'>
+    <header className='fixed top-0 left-0 z-50 w-full shadow-md bg-primaryBg backdrop-blur-md'>
       <div className='flex items-center justify-between px-6 py-4 mx-auto max-w-7xl'>
         {/* Logo with animation */}
         <Link href='/'>
           <motion.span
-            className='text-2xl font-bold tracking-wide text-accent cursor-pointer relative'
+            className='relative text-2xl font-bold tracking-wide cursor-pointer text-accent'
             whileHover={{ scale: 1.1, rotate: 2 }}
             transition={{ type: 'spring', stiffness: 300 }}
           >
@@ -23,19 +23,19 @@ export default function Header () {
 
         {/* Navigation Menu (Desktop) */}
         <nav className='hidden gap-8 md:flex '>
-          {[ 'Surf Spots', 'Gallery', 'Blog', 'Contact'].map(
+          {[ 'Locations', 'Gallery', 'Blog','About-Us', 'Contact'].map(
             (item, index) => (
               <Link
                 key={item}
                 href={`/${item.toLowerCase().replace(' ', '-')}`}
               >
                 <motion.span
-                  className='transition cursor-pointer text-accent hover:text-yellow-300 relative'
+                  className='relative transition cursor-pointer text-accent hover:text-yellow-300'
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.3 }}
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
+                  // transition={{ delay: index * 0.1 }}
                 >
                   {item}
                 </motion.span>
@@ -46,10 +46,10 @@ export default function Header () {
 
         {/* View Packages Button */}
         <div className=''>
-        <Link href='/packages' className='lg:px-7 lg:py-3 relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full  text-sm font-medium ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 px-2 py-2 bg-gradient-to-b from-yellow-400 to-yellow-500 text-white shadow-lg overflow-hidden group'>
+        <Link href='/packages' className='relative inline-flex items-center justify-center gap-2 px-2 py-2 overflow-hidden text-sm font-medium text-white transition-all duration-300 rounded-full shadow-lg lg:px-7 lg:py-3 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-b from-yellow-400 to-yellow-500 group'>
   View Packages
   {/* Glossy Overlay */}
-  <span className='absolute inset-0 bg-white/20 opacity-50 group-hover:opacity-70 transition-all duration-500'></span>
+  <span className='absolute inset-0 transition-all duration-500 opacity-50 bg-white/20 group-hover:opacity-70'></span>
   {/* Shine Effect */}
   <span className='absolute left-[-150%] top-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white to-transparent rotate-12 opacity-30 group-hover:translate-x-[150%] group-hover:opacity-70 transition-all duration-700 ease-in-out'></span>
           </Link>
@@ -68,16 +68,16 @@ export default function Header () {
       {/* Mobile Menu with Slide-in Animation */}
       {isOpen && (
         <motion.nav
-          className='absolute left-0 w-full p-6 shadow-md md:hidden bg-white backdrop-blur-md top-16'
+          className='absolute left-0 w-full p-6 bg-white shadow-md md:hidden backdrop-blur-md top-16'
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
         >
-          {['Home', 'Surf Spots', 'Gallery', 'Blog', 'Contact'].map(item => (
+          {['Home', 'Locations', 'Gallery', 'Blog', 'Contact'].map(item => (
             <Link key={item} href={`/${item.toLowerCase().replace(' ', '-')}`}>
               <span
-                className='block py-2 text-center text-accent transition-all hover:bg-white/20 rounded'
+                className='block py-2 text-center transition-all rounded text-accent hover:bg-white/20'
                 onClick={() => setIsOpen(false)}
               >
                 {item}
