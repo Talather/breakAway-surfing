@@ -42,10 +42,10 @@ const countryData = {
     clubs: ['Sydney Surf Lounge', 'Gold Coast Wave Club']
   },
   morroco: {
-    name: 'Bali',
+    name: 'Morroco',
     flag: '/flags/morroco.jpg',
     description:
-      'Bali offers warm waters and world-class surfing in a tropical paradise.',
+      'Morroco offers warm waters and world-class surfing in a tropical paradise.',
     culture:
       'Balinese culture is rich with temples, traditions, and spirituality.',
     beaches: ['Uluwatu', 'Padang Padang', 'Canggu'],
