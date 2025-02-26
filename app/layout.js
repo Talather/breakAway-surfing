@@ -2,6 +2,31 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { Pacifico, Oswald, Poppins } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['300', '400', '600'],
+  variable: '--font-montserrat'
+})
+
+// Load fonts
+const pacifico = Pacifico({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-pacifico'
+})
+const oswald = Oswald({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-oswald'
+})
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '600'],
+  variable: '--font-poppins'
+})
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,8 +37,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en"  className={`${pacifico.variable} ${oswald.variable} ${montserrat.variable}`}>
+      <body
+        // className={inter.className}
+        className={'font-montserrat' }
+      >
 
         
         <Header/>

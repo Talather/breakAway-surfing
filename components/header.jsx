@@ -3,23 +3,33 @@ import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Header () {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className='fixed top-0 left-0 z-50 w-full shadow-md bg-primaryBg backdrop-blur-md'>
+    <header className='fixed top-0 left-0 z-50 w-full bg-white shadow-md backdrop-blur-md'>
       <div className='flex items-center justify-between px-6 py-4 mx-auto max-w-7xl'>
         {/* Logo with animation */}
         <Link href='/'>
-          <motion.span
-            className='relative text-2xl font-bold tracking-wide cursor-pointer text-accent'
-            whileHover={{ scale: 1.1, rotate: 2 }}
-            transition={{ type: 'spring', stiffness: 300 }}
-          >
-            🌊 BreakAway Surfing
-          </motion.span>
+          <Image src={'/logo/logo.png'} alt='nonce' width={100} height={100} className = 'transition-transform duration-300 ease-in-out scale-150  animate-[zoom-in-out_3s_ease-in-out_infinite]'
+ />
         </Link>
+
+
+ {/* <div className='flex items-center'>
+  <Image
+    src='/logo/logo.png'
+    alt='Logo'
+    width={100}
+    height={50}
+    className='transition-transform duration-300 ease-in-out hover:scale-110'
+  />
+</div> */}
+
+
+
 
         {/* Navigation Menu (Desktop) */}
         <nav className='hidden gap-8 md:flex '>
@@ -30,7 +40,7 @@ export default function Header () {
                 href={`/${item.toLowerCase().replace(' ', '-')}`}
               >
                 <motion.span
-                  className='relative transition cursor-pointer text-accent hover:text-yellow-300'
+                  className='relative transition cursor-pointer font-montserrat text-accent hover:text-yellow-300'
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.3 }}
                   initial={{ opacity: 0, y: -10 }}
@@ -46,7 +56,7 @@ export default function Header () {
 
         {/* View Packages Button */}
         <div className=''>
-        <Link href='/packages' className='relative inline-flex items-center justify-center gap-2 px-2 py-2 overflow-hidden text-sm font-medium text-white transition-all duration-300 rounded-full shadow-lg lg:px-7 lg:py-3 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-b from-yellow-400 to-yellow-500 group'>
+        <Link href='/packages' className='relative inline-flex items-center justify-center gap-2 px-2 py-2 overflow-hidden text-sm text-white transition-all duration-300 rounded-full shadow-lg font-montserrat lg:px-7 lg:py-3 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-b from-yellow-400 to-yellow-500 group'>
   View Packages
   {/* Glossy Overlay */}
   <span className='absolute inset-0 transition-all duration-500 opacity-50 bg-white/20 group-hover:opacity-70'></span>

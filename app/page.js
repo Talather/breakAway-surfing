@@ -9,11 +9,31 @@ export default function Home() {
     
     <main className="flex flex-col items-center justify-between min-h-screen ">
 
-     <div className="w-full mt-16 bg-[url('/lira.jpg')] bg-cover bg-center min-h-[150vh]">
-  <HeroSection />
+      {/* <div className="w-full mt-16  bg-cover bg-center min-h-[88vh]">
+        <div >
+          <video
+  autoPlay
+  loop
+  muted
+  playsInline
+  className='absolute top-0 left-0 object-cover w-full h-full'
+>
+  <source src='/video/video.mp4' type='video/mp4' />
+  Your browser does not support the video tag.
+</video>
+
+          <HeroSection />
+          </div>
+</div> */}
+      
+
+
+<div className="w-full mt-16  bg-cover bg-center min-h-[88vh]">
+       <HeroSection />
+          
 </div>
 
-<div className="w-full bg-primaryBg min-h-[90vh] sm:min-h-[80vh] md:min-h-[100vh] lg:min-h-[130vh] flex items-center">
+<div className="w-full bg-primaryBg min-h-[90vh] sm:min-h-[80vh] md:min-h-[103vh] lg:min-h-[130vh] flex items-center">
   <UpcomingTrips />
 </div>
 

@@ -14,14 +14,18 @@ module.exports = {
       },
       colors: {
         primaryBg: '#fdfaf1', // Light Cream
-        sea:'#0496c7',
+        sea: '#0496c7',
         secondaryBg: '#e0c9a6', // Sand
         accent: '#007e8a', // Teal/Blue
         textColor: '#333'
       },
       fontFamily: {
         title: ['Higher Jump', 'sans-serif'],
-        body: ['Montserrat', 'sans-serif']
+        body: ['Montserrat', 'sans-serif'],
+        montserrat: ['var(--font-montserrat)', 'sans-serif'],
+        pacifico: ['var(--font-pacifico)', 'cursive'],
+        oswald: ['var(--font-oswald)', 'sans-serif'],
+        poppins: ['var(--font-poppins)', 'sans-serif']
       }
     }
   },

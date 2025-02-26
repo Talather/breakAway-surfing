@@ -40,10 +40,10 @@ export default function Testimonials () {
       {/* ✅ Fix 1: Ensure Background Doesn't Block Clicks */}
       <div className="absolute top-0 left-0 w-full h-full bg-[url('/lira.jpg')] bg-cover opacity-10 pointer-events-none"></div>
 
-      <h2 className='text-4xl font-bold mb-6'>
-        🌊 Hear from Our Happy Surfers
+      <h2 className='mb-6 text-5xl font-title'>
+        Hear from Our Happy Surfers
       </h2>
-      <p className='text-lg mb-10 max-w-2xl mx-auto'>
+      <p className='max-w-2xl mx-auto mb-10 text-lg'>
         Our clients love riding the waves with us! Check out their experiences
         below.
       </p>
@@ -51,7 +51,7 @@ export default function Testimonials () {
       {/* ✅ Fix 2: Ensure Key is On Parent to Prevent Remounting */}
       <div key={index}>
         <motion.div
-          className='relative max-w-xl mx-auto bg-white text-gray-800 p-8 rounded-xl shadow-xl border border-gray-300'
+          className='relative max-w-xl p-8 mx-auto text-gray-800 bg-white border border-gray-300 shadow-xl rounded-xl'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
@@ -62,7 +62,7 @@ export default function Testimonials () {
             <img
               src={testimonials[index].image}
               alt={testimonials[index].name}
-              className='w-16 h-16 rounded-full object-cover shadow-md'
+              className='object-cover w-16 h-16 rounded-full shadow-md'
             />
             <div className='text-left'>
               <h3 className='text-xl font-semibold'>
@@ -87,7 +87,7 @@ export default function Testimonials () {
       {/* ✅ Fix 3: Ensure Clicks Register */}
       <div>
         <button
-          className='mt-10 px-6 py-3 bg-yellow-400 hover:bg-yellow-600 text-white font-semibold rounded-full shadow-lg transition-all cursor-pointer'
+          className='px-6 py-3 mt-10 text-white transition-all bg-yellow-400 rounded-full shadow-lg cursor-pointer font-body hover:bg-yellow-600'
           onClick={e => {
             e.stopPropagation() // Stops click interference
             nextTestimonial()
