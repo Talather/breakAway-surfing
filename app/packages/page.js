@@ -33,7 +33,7 @@ const packages = [
 
 export default function Packages () {
   return (
-    <section className='relative  mt-10 py-16 bg-gray-100 text-center'>
+    <section className='relative  mt-20 py-16 bg-gray-100 text-center'>
       {/* Background Waves */}
       <div className="absolute top-0 left-0 w-full h-full bg-[url('/waves.svg')] bg-cover opacity-10"></div>
 

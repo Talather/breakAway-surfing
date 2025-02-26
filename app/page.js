@@ -1,5 +1,6 @@
 import HeroSection from "@/components/hero";
 import JoinCommunity from "@/components/joinCommunity";
+import OurStory from "@/components/ourStory";
 import Testimonials from "@/components/testimonials";
 import UpcomingTrips from "@/components/UpcomingTrips";
 import Image from "next/image";
@@ -33,9 +34,14 @@ export default function Home() {
           
 </div>
 
-<div className="w-full bg-primaryBg min-h-[90vh] sm:min-h-[80vh] md:min-h-[103vh] lg:min-h-[130vh] flex items-center">
+<div className="w-full bg-primaryBg min-h-[90vh] sm:min-h-[80vh] md:min-h-[92vh] lg:min-h-[130vh] flex items-center">
   <UpcomingTrips />
+      </div>
+
+      <div className='w-full bg-white min-h-[90vh] sm:min-h-[80vh] md:min-h-[80vh] lg:min-h-[100vh] flex items-center justify-center'>
+  <OurStory />
 </div>
+
 
 <div className="w-full bg-primaryBg min-h-[70vh] sm:min-h-[60vh] md:min-h-[79vh] lg:w-full flex items-center md:w-full">
   <Testimonials />
