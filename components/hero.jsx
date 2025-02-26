@@ -71,7 +71,7 @@ export default function HeroSection () {
           <span className='text-yellow-300'>New Adventure?</span>
         </h1>
 
-        <p className='mt-6 lg:text-2xl sm:text-lg font-body text-blue-50 md:text-xl drop-shadow-md'>
+        <p className='mt-6 lg:text-2xl sm:text-xl font-body text-blue-50 md:text-xl drop-shadow-md'>
           Ride the waves, embrace the thrill, and experience the ultimate
           freedom on the ocean. Join us today and make unforgettable memories.
         </p>

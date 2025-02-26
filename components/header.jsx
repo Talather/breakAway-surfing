@@ -33,7 +33,7 @@ export default function Header () {
 
         {/* Navigation Menu (Desktop) */}
         <nav className='hidden gap-8 md:flex '>
-          {[ 'Locations', 'Gallery', 'Blog','About-Us', 'Contact'].map(
+          {[ 'Locations','About-Us', 'Contact'].map(
             (item, index) => (
               <Link
                 key={item}

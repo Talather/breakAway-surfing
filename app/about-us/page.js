@@ -186,12 +186,12 @@ export default function AboutUs () {
       <section className="relative flex items-center justify-center h-[100vh] bg-[url('/Kapa.jpg')] bg-cover bg-center">
         <div className='absolute inset-0 bg-blue-800/40 backdrop-blur-sm'></div>
         <motion.h1
-          className='relative z-10 text-6xl font-bold text-transparent bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text'
+          className='relative z-10 font-bold text-transparent sm:text-5xl md:text-7xl bg-gradient-to-r from-white via-yellow-400 to-yellow-300 bg-clip-text'
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          About BreakAway Surfing 🏄‍♂️
+          About BreakAway Surfing 
         </motion.h1>
       </section>
 
@@ -272,7 +272,7 @@ export default function AboutUs () {
         initial='initial'
         animate='animate'
       >
-        <h2 className='mb-4 text-4xl font-bold text-yellow-300 transition-all duration-300 hover:scale-105'>
+        <h2 className='mb-4 text-4xl font-bold text-yellow-300 transition-all duration-300  hover:scale-105'>
           Our Community
         </h2>
         <p className='max-w-2xl mx-auto text-lg text-gray-200'>
