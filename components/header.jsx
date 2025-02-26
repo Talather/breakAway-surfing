@@ -39,7 +39,7 @@ export default function Header () {
             alt='Cali Surf'
             width={160}
             height={80}
-            className='transition-transform duration-300 ease-in-out hover:scale-110'
+            className='transition-transform duration-300 ease-in-out rounded-lg hover:scale-110'
           />
         </Link>
 
