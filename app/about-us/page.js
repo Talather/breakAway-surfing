@@ -183,7 +183,7 @@ export default function AboutUs () {
   return (
     <div className='overflow-hidden text-white bg-blue-900'>
       {/* 🌊 Hero Section with Wave Effect */}
-      <section className="relative flex items-center justify-center h-[100vh] bg-[url('/kapa.jpg')] bg-cover bg-center">
+      <section className="relative flex items-center justify-center h-[100vh] bg-[url('/Kapa.jpg')] bg-cover bg-center">
         <div className='absolute inset-0 bg-blue-800/40 backdrop-blur-sm'></div>
         <motion.h1
           className='relative z-10 text-6xl font-bold text-transparent bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-600 bg-clip-text'
