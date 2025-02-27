@@ -38,8 +38,8 @@ export default function Header () {
             src='/logo/logo.png'
             alt='Cali Surf'
             width={160}
-            height={160}
-            className='transition-transform duration-300 ease-in-out scale-125 hover:scale-150'
+            height={80}
+            className='transition-transform duration-300 ease-in-out rounded-lg hover:scale-110'
           />
         </Link>
 
