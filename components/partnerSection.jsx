@@ -92,14 +92,14 @@ const partners = [
 export default function PartnersSection () {
   return (
     <motion.section
-      className='px-6 py-16 text-center bg-blue-800'
+      className='px-6 py-16 text-center bg-[#fff]'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1.2 } }}
     >
-      <h2 className='mb-4 text-4xl font-bold text-yellow-300 transition-all duration-300 hover:scale-105'>
+      <h2 className='mb-4 text-4xl font-bold text-black transition-all duration-300 hover:scale-105'>
         Our Partners & Teachers
       </h2>
-      <p className='max-w-2xl mx-auto text-lg text-gray-200'>
+      <p className='max-w-2xl mx-auto text-lg text-gray-800'>
         We collaborate with the world’s best surfers and global organizations to
         bring top-tier training and surf experiences.
       </p>
@@ -119,7 +119,7 @@ export default function PartnersSection () {
           >
             {/* Front Side of Coin (Logo) */}
             <motion.div
-              className='absolute inset-0 flex flex-col items-center justify-center w-full h-full text-lg font-bold text-blue-900 bg-yellow-300 border-2 border-yellow-400 rounded-full shadow-lg'
+              className='absolute inset-0 flex flex-col items-center justify-center w-full h-full text-lg font-bold text-white bg-[#1a9b98] border-2 border-[#1a9b98] rounded-full shadow-lg'
               style={{ backfaceVisibility: 'hidden' }}
             >
               <Image

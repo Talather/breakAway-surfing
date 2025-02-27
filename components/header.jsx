@@ -38,18 +38,18 @@ export default function Header () {
             src='/logo/logo.png'
             alt='Cali Surf'
             width={160}
-            height={80}
-            className='transition-transform duration-300 ease-in-out hover:scale-110'
+            height={160}
+            className='transition-transform duration-300 ease-in-out scale-125 hover:scale-150'
           />
         </Link>
 
         {/* View Packages Button */}
         <div className='hidden md:flex'>
           <Link
-            href='/packages'
-            className='px-6 py-2 text-black bg-yellow-500 rounded-full shadow-xl hover:bg-yellow-600 font-montserrat text-sm lg:text-base uppercase tracking-widest'
+            href='/book-now'
+            className='px-6 py-2 text-black bg-yellow-400 rounded-sm shadow-xl hover:scale-105 font-montserrat text-sm lg:text-base uppercase tracking-widest'
           >
-            View Packages
+            Book Now
           </Link>
         </div>
 

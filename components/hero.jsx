@@ -53,9 +53,9 @@ import Link from 'next/link'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const slides = [
-  { image: '/lira.jpg', text: 'Experience the Thrill of Surfing' },
-  { image: '/beach.jpeg', text: 'Ride the Waves Like Never Before' },
-  { image: '/forest.jpg', text: 'Discover Your Surfing Adventure' }
+  { image: '/wave.jpg', text: 'Experience the Thrill of Surfing' },
+  { image: '/bc.jpg', text: 'Ride the Waves Like Never Before' },
+  { image: '/sigma.jpg', text: 'Discover Your Surfing Adventure' }
 ]
 
 export default function HeroSection () {
@@ -91,7 +91,7 @@ export default function HeroSection () {
         transition={{ duration: 0.8 }}
       />
 
-      <div className='absolute inset-0 bg-black/30 backdrop-blur-sm'></div>
+      <div className='absolute inset-0 bg-black/30 '></div>
 
       {/* Content */}
       <div className='relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6'>
@@ -99,7 +99,7 @@ export default function HeroSection () {
           key={currentSlide}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
           className='text-6xl font-bold drop-shadow-lg'
         >
           {slides[currentSlide].text}
@@ -110,8 +110,8 @@ export default function HeroSection () {
           adventure. Book your ride now and start your journey!
         </p>
 
-        <Link href='/packages'>
-          <button className='relative px-8 py-3 mt-6 text-lg font-semibold text-black uppercase transition-all duration-300 bg-yellow-500 rounded-sm shadow-lg hover:bg-yellow-600'>
+        <Link href='/book-now'>
+          <button className='relative px-8 py-3 mt-6 text-lg font-semibold text-black uppercase transition-all duration-300 bg-yellow-400 rounded-sm shadow-lg hover:bg-yellow-600'>
             Book Now
           </button>
         </Link>

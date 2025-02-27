@@ -29,28 +29,28 @@ export default function Home() {
       
 
 
-<div className="w-full mt-16  bg-cover bg-center min-h-[88vh]">
+<div className="w-full mt-16  bg-center">
        <HeroSection />
           
 </div>
 
-<div className="w-full bg-primaryBg min-h-[90vh] sm:min-h-[80vh] md:min-h-[92vh] lg:min-h-[130vh] flex items-center">
+<div className="w-full bg-primaryBg  flex items-center">
   <UpcomingTrips />
       </div>
 
-      <div className='w-full bg-white min-h-[90vh] sm:min-h-[80vh] md:min-h-[80vh] lg:min-h-[100vh] flex items-center justify-center'>
+      <div className='w-full bg-white flex items-center justify-center'>
   <OurStory />
 </div>
 
 
-<div className="w-full bg-primaryBg min-h-[70vh] sm:min-h-[60vh] md:min-h-[79vh] lg:w-full flex items-center md:w-full">
+<div className="w-full bg-primaryBg lg:w-full flex items-center md:w-full">
   <Testimonials />
 </div>
 
-<div className="w-full bg-primaryBg min-h-[40vh] sm:min-h-[30vh] md:min-h-[40vh]  lg:min-w-[97vw]  md:w-full
+{/* <div className="w-full bg-primaryBg   md:w-full
  flex items-center">
   <JoinCommunity />
-</div>
+</div> */}
 
       
       

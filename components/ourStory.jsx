@@ -91,7 +91,7 @@ export default function OurStory () {
       {/* Background Image */}
       <div className='absolute inset-0 w-full h-full overflow-hidden'>
         <Image
-          src='/beach.jpeg'
+          src='/tropical.jpg'
           alt='Our Story Background'
           layout='fill'
           objectFit='cover'
@@ -101,39 +101,38 @@ export default function OurStory () {
 
       {/* Content Box */}
       <motion.div
-        className='relative z-10 w-full max-w-3xl px-10 py-28 bg-white shadow-2xl rounded-lg border-4 border-yellow-400 mr-16'
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className='absolute top-0 left-0 w-20 h-1 bg-yellow-400'></div>
-        <h2 className='text-3xl font-bold text-gray-900 uppercase tracking-widest flex items-center'>
-          <span className='text-yellow-500 mr-2'>02</span> OUR STORY
-        </h2>
-        <p className='mt-4 text-gray-700 leading-relaxed'>
-          Established in 1992, our{' '}
-          <span className='text-blue-500 font-semibold'>Cali Surf Shop</span>{' '}
-          has every aspect of beach life covered. The selection of leading
-          brands, hardware designs, and apparel make our offerings unbeatable.
-          Our deep-rooted passion for surfing drives us to bring you the best
-          products the surf industry has to offer.
-        </p>
-        <blockquote className='mt-4 italic text-lg text-gray-600'>
-          "Surfing is the most blissful experience you can have on this planet,
-          a taste of heaven..."
-        </blockquote>
+  className='mr-20 relative z-40 w-full max-w-3xl px-10 py-28 bg-white shadow-4xl rounded-lg border-4 border-[#26d2ce] flex flex-col items-center justify-center text-center'
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.8 }}
+>
+  <div className='absolute top-0 left-0 w-20 h-1 bg-[#26d2ce]'></div>
+  <h2 className='text-3xl font-bold text-gray-900 uppercase tracking-widest flex items-center justify-center'>
+    <span className='text-[#26d2ce] mr-2'>02</span> OUR STORY
+  </h2>
+  <p className='mt-4 text-gray-700 leading-relaxed'>
+    Established in 1992, our{' '}
+    <span className='text-blue-500 font-semibold'>BreakAway Surf</span> has
+    every aspect of beach life covered. The selection of leading brands,
+    hardware designs, and apparel make our offerings unbeatable. Our deep-rooted
+    passion for surfing drives us to bring you the best products the surf
+    industry has to offer.
+  </p>
+  <blockquote className='mt-4 italic text-lg text-gray-600'>
+    "Surfing is the most blissful experience you can have on this planet, a
+    taste of heaven..."
+  </blockquote>
+  <Link href='/about-us'>
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className='px-6 py-3 mt-6 text-lg font-semibold text-white uppercase transition-all duration-300 bg-[#26d2ce] rounded-sm shadow-lg '
+    >
+      More About Us
+    </motion.button>
+  </Link>
+</motion.div>
 
-        {/* Button */}
-        <Link href='/about-us'>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className='relative px-6 py-3 mt-6 text-lg font-semibold text-white uppercase transition-all duration-300 bg-yellow-500 rounded-lg shadow-lg hover:bg-yellow-600'
-          >
-            More About Us
-          </motion.button>
-        </Link>
-      </motion.div>
     </section>
   )
 }
