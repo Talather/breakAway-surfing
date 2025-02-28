@@ -56,9 +56,9 @@ export default function EventPage () {
           className='bg-white shadow-lg rounded-xl p-6 md:p-8 border border-gray-200 text-center'
         >
           <h2 className='text-xl font-semibold text-gray-900'>Surf Tour with the Team </h2>
-          <h2 className='text-xl font-semibold text-gray-900'>499€ Actual Price</h2>
+          <h2 className='text-xl font-semibold text-gray-900'>499 GBP Actual Price</h2>
 
-          <h2 className='text-xl font-semibold text-gray-900'>149€ Advance</h2>
+          <h2 className='text-xl font-semibold text-gray-900'>100€ Advance</h2>
         
 
           <p className='text-md font-normal text-blue-400 mt-2'>Pay 30% in advance to save your spot</p>
@@ -76,7 +76,7 @@ export default function EventPage () {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className='w-full mt-4 px-6 py-3 bg-orange-400 text-white font-semibold rounded-lg shadow-md hover:bg-orange-500 transition-all'
+              className='w-full mt-4 px-6 py-3 bg-[#1ea19f] text-white font-semibold rounded-lg shadow-md  transition-all'
             >
               Save my spot
             </motion.button>

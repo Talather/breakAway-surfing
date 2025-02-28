@@ -212,7 +212,7 @@ export default function WhoWeAre () {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex(prevIndex => (prevIndex + 1) % banners.length)
-    }, 5000) // Change slide every 5 seconds
+    }, 50000) // Change slide every 5 seconds
     return () => clearInterval(interval)
   }, [])
 
@@ -227,7 +227,7 @@ export default function WhoWeAre () {
   }
 
   return (
-    <section className='container px-6 mx-auto text-center py-36'>
+    <section className='container px-6 mx-auto text-center pt-28'>
       <h2 className='mb-4 text-4xl font-bold text-white'>Who We Are</h2>
       <p className='max-w-2xl mx-auto text-lg text-gray-200'>
         We are a passionate community of marketers, designers, and tech

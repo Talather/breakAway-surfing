@@ -36,22 +36,22 @@ export default function Footer () {
 
       <div className='relative z-10 flex flex-col items-center px-6 text-center max-w-7xl mx-auto'>
         {/* Footer Content Box with Glassmorphism */}
-        <div className='w-full max-w-6xl p-10 bg-white/10 backdrop-blur-lg rounded-lg shadow-2xl flex flex-col md:flex-row justify-between items-center gap-8 border border-white/20'>
+        <div className='w-full max-w-6xl p-10 md:p-10 bg-white/10 backdrop-blur-lg rounded-lg shadow-2xl flex flex-col md:flex-row justify-between items-center gap-8 border border-white/20'>
           {/* Subscription Form */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className='w-full md:w-2/3 flex flex-col md:flex-row items-center gap-4 bg-white p-2 rounded-full shadow-lg border-2'
+            className='w-full md:w-2/3   md:h-full flex flex-col md:flex-row items-center gap-4 bg-white p-2 rounded-full shadow-lg border-2'
           >
             <input
               type='email'
               placeholder='Enter your email...'
-              className='flex-1 px-4 py-3 text-gray-800 rounded-full focus:outline-none focus:ring-2 transition-all'
+              className='flex-1 w-[150px] md:w-full  px-0 md:px-4 py-3 text-gray-800 rounded-full focus:outline-none focus:ring-2 transition-all'
             />
             <button
               onClick={handleSubscribe}
-              className='px-6 py-3 text-lg font-semibold text-white uppercase bg-yellow-400 rounded-full shadow-lg transition-all hover:scale-105 hover:bg-yellow-500'
+              className='px-2 md:px-6 py-1 md:py-3 text-lg font-semibold text-white uppercase bg-yellow-400 rounded-full shadow-lg transition-all hover:scale-105 hover:bg-yellow-500'
             >
               Subscribe
             </button>

@@ -33,7 +33,7 @@ export default function ContactUs () {
   }
 
   return (
-    <section className='relative min-h-screen h-[134vh] bg-gradient-to-b from-blue-500 to-blue-700 flex items-center justify-center text-white'>
+    <section className='mt-10 relative min-h-screen h-[134vh] bg-gradient-to-b from-[#249155] to-[#0ed6d3] flex items-center justify-center text-white'>
       {/* Ocean Background Waves */}
       <div className="absolute inset-0 bg-[url('/lira.jpg')] bg-cover opacity-20"></div>
 

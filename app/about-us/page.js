@@ -188,7 +188,7 @@ export default function AboutUs () {
       <section className="relative flex items-center justify-center h-[100vh] bg-[url('/beautiful.jpg')] bg-cover bg-center">
         <div className='absolute inset-0 bg-black/20 '></div>
         <motion.h1
-          className='relative z-10 font-bold text-transparent sm:text-5xl md:text-7xl bg-gradient-to-r text-white'
+          className='relative z-10 font-bold text-transparent text-7xl md:text-7xl bg-gradient-to-r text-white'
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -198,7 +198,7 @@ export default function AboutUs () {
       </section>
 
       {/* 🏄‍♂️ Who We Are Section */}
-      <div className='h-[170vh] bg-[#1ea19f]'>
+      <div className='h-[130vh] md:h-[190vh] xl:h-[157vh]  bg-[#1ea19f]'>
      <WhoWeAre /></div>
 
       {/* 🌟 Why Join Us Section with Floating Icons */}

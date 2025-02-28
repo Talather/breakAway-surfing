@@ -65,7 +65,7 @@ export default function Header () {
       {/* Mobile Menu */}
       {isOpen && (
         <motion.nav
-          className='absolute left-0 w-full p-6 bg-white/20 backdrop-blur-xl shadow-lg md:hidden top-16 rounded-lg'
+          className='absolute left-0 w-full  p-6 bg-white/90 backdrop-blur-xl shadow-lg md:hidden top-16 rounded-lg'
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
@@ -80,7 +80,7 @@ export default function Header () {
                 .replace(' ', '-')}`}
             >
               <span
-                className='block py-3 text-center text-lg text-white hover:text-yellow-400 uppercase tracking-widest'
+                className='block py-3 text-center text-lg text-black hover:text-yellow-400 uppercase tracking-widest'
                 onClick={() => setIsOpen(false)}
               >
                 {item}
