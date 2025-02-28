@@ -9,7 +9,7 @@ export default function EventPage () {
 
   return (
     <section className='container mx-auto px-6 py-24 bg-white mt-28 '>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
+      <div className=' bg-white grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
         {/* Left Section: Text & Image */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -21,16 +21,10 @@ export default function EventPage () {
             Join the Ultimate BreakAway Surf Adventure – Reserve Your Spot Now!
           </h1>
           <p className='text-lg text-gray-700 leading-relaxed'>
-            Imagine waking up to the sound of crashing waves, feeling the ocean
-            breeze on your skin, and spending your days surfing the best swells
-            with an amazing crew of adventure-seekers. This is your chance to
-            experience like never before! Learn from expert surf
-            coaches and ride the waves with confidence Explore scenic coastal
-            trails and hidden beachside gems Unwind at sunset gatherings with a
-            vibrant community of like-minded souls Soak in the energy of 
-            surf culture with music, bonfires, and unforgettable vibes Spots are
-            limited – secure yours today and make your dream surf escape a
-            reality!
+            From March 24th to May 1st, experience an unforgettable surfing retreat at Anza Beach, Morocco, where the waves meet adventure, culture, and relaxation. With only 10 slots available per trip, this exclusive opportunity ensures a personalized and immersive experience tailored to surfers of all levels.Nestled right by the beach, your 7-day stay includes comfortable beachside accommodation with delicious meals provided daily, allowing you to focus solely on the waves and the vibrant Moroccan atmosphere. Under the guidance of professional surf coaches, you’ll receive expert instruction and access to KI Rentals, ensuring you have the best equipment and techniques to enhance your surfing skills.
+Beyond the ocean, immerse yourself in Moroccan culture with guided excursions to the picturesque Imsouane and Taghazout—two of the most renowned coastal gems, rich in heritage, charm, and breathtaking landscapes.
+Whether you are a beginner eager to catch your first wave or an experienced surfer looking to refine your skills, this experience promises the perfect blend of adventure, relaxation, and cultural exploration.
+
           </p>
           {/* <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -49,11 +43,13 @@ export default function EventPage () {
         </motion.div>
 
         {/* Right Section: Booking Card */}
+        
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className='bg-white shadow-lg rounded-xl p-6 md:p-8 border border-gray-200 text-center'
+          className='bg-white shadow-lg rounded-xl p-6 md:p-8 border border-gray-200 text-center mb-10
+'
         >
           <h2 className='text-xl font-semibold text-gray-900'>Surf Tour with the Team </h2>
           <h2 className='text-xl font-semibold text-gray-900'>499 GBP Actual Price</h2>
@@ -68,9 +64,9 @@ export default function EventPage () {
             value={selectedDate}
             onChange={e => setSelectedDate(e.target.value)}
           >
-            <option>April 17th-23rd</option>
-            <option>March 10th</option>
-            <option>April 15th</option>
+            <option>24th March - 1st April</option>
+            {/* <option>March 10th</option>
+            <option>April 15th</option> */}
           </select>
           <Link href='https://buy.stripe.com/6oE3cf6JG2LF1Zm288'>
             <motion.button

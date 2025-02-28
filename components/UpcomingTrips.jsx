@@ -155,7 +155,7 @@ const trip = {
   title: 'Morocco Surf Adventure',
   location: 'Morocco',
   date: 'April 15, 2025',
-  image: '/beach.jpeg'
+  image: '/sigmas.jpg'
 }
 
 export default function UpcomingTrip () {
