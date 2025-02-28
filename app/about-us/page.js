@@ -156,6 +156,7 @@
 'use client'
 import PartnersSection from '@/components/partnerSection'
 import WhoWeAre from '@/components/whoweare'
+import WhyJoinUs from '@/components/whyJoinUs'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
@@ -197,11 +198,11 @@ export default function AboutUs () {
       </section>
 
       {/* 🏄‍♂️ Who We Are Section */}
-      <div className='h-[100vh] bg-[#1ea19f]'>
+      <div className='h-[170vh] bg-[#1ea19f]'>
      <WhoWeAre /></div>
 
       {/* 🌟 Why Join Us Section with Floating Icons */}
-      <motion.section
+      {/* <motion.section
         className='px-6 py-16 text-center text-blue-900 bg-white'
         variants={fadeIn}
         initial='initial'
@@ -229,8 +230,8 @@ export default function AboutUs () {
             )
           )}
         </div>
-      </motion.section>
-
+      </motion.section> */}
+      <WhyJoinUs />
       {/* 🤝 Community Section with Background Water Effect */}
       <motion.section
         className='container px-6 py-16 mx-auto text-center relative bg-[url("/lira.jpg")] bg-[#82CEFF] bg-opacity-30'

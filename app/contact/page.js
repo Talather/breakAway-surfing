@@ -1,7 +1,8 @@
 'use client'
-import { motion } from 'framer-motion'
+
+import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
-import { Send, Mail, Phone, MapPin } from 'lucide-react'
+import { Send, Mail, Phone, MapPin, CheckCircle } from 'lucide-react'
 
 export default function ContactUs () {
   const [formData, setFormData] = useState({
@@ -9,6 +10,7 @@ export default function ContactUs () {
     email: '',
     message: ''
   })
+  const [showToast, setShowToast] = useState(false)
 
   const handleChange = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -17,7 +19,17 @@ export default function ContactUs () {
   const handleSubmit = e => {
     e.preventDefault()
     console.log('Form Submitted:', formData)
-    alert('Message Sent Successfully!')
+
+    // Show toast notification
+    setShowToast(true)
+
+    // Hide toast after 3 seconds
+    setTimeout(() => {
+      setShowToast(false)
+    }, 3000)
+
+    // Clear form after submission
+    setFormData({ name: '', email: '', message: '' })
   }
 
   return (
@@ -60,8 +72,7 @@ export default function ContactUs () {
               required
               value={formData.email}
               onChange={handleChange}
-              className='placeholder-gray-300
-w-full px-4 py-3 text-lg bg-white/20 text-white rounded-lg border border-white/30 focus:border-yellow-400 outline-none transition-all'
+              className='w-full px-4 py-3 text-lg bg-white/20 text-white rounded-lg border border-white/30 focus:border-yellow-400 outline-none transition-all placeholder-gray-300'
               placeholder='Your Email'
             />
           </div>
@@ -73,7 +84,7 @@ w-full px-4 py-3 text-lg bg-white/20 text-white rounded-lg border border-white/3
               required
               value={formData.message}
               onChange={handleChange}
-              className='placeholder-gray-300 w-full px-4 py-3 text-lg bg-white/20 text-white rounded-lg border border-white/30 focus:border-yellow-400 outline-none transition-all resize-none'
+              className='w-full px-4 py-3 text-lg bg-white/20 text-white rounded-lg border border-white/30 focus:border-yellow-400 outline-none transition-all resize-none placeholder-gray-300'
               placeholder='Your Message'
               rows='4'
             ></textarea>
@@ -102,6 +113,22 @@ w-full px-4 py-3 text-lg bg-white/20 text-white rounded-lg border border-white/3
           </p>
         </div>
       </motion.div>
+
+      {/* Toast Notification */}
+      <AnimatePresence>
+        {showToast && (
+          <motion.div
+            className='fixed bottom-8 right-8 bg-green-500 text-white px-6 py-3 rounded-lg flex items-center gap-3 shadow-lg'
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.4 }}
+          >
+            <CheckCircle size={24} />
+            Message Sent Successfully!
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   )
 }

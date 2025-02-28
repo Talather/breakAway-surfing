@@ -55,9 +55,11 @@ export default function EventPage () {
           transition={{ duration: 0.8 }}
           className='bg-white shadow-lg rounded-xl p-6 md:p-8 border border-gray-200 text-center'
         >
-          <h2 className='text-xl font-semibold text-gray-900'>Surf Retreat Tour with the Team </h2>
-          <h2 className='text-xl font-semibold text-gray-900'>205€ Advance</h2>
-          <h2 className='text-xl font-semibold text-gray-900'>Final Price 680€</h2>
+          <h2 className='text-xl font-semibold text-gray-900'>Surf Tour with the Team </h2>
+          <h2 className='text-xl font-semibold text-gray-900'>499€ Actual Price</h2>
+
+          <h2 className='text-xl font-semibold text-gray-900'>149€ Advance</h2>
+        
 
           <p className='text-md font-normal text-blue-400 mt-2'>Pay 30% in advance to save your spot</p>
 
@@ -85,7 +87,7 @@ export default function EventPage () {
           </p> */}
 
           <div className='flex items-center justify-center text-gray-600 text-sm mt-4'>
-            <span className='mr-2'>👥</span> Only 5 spots left
+            <span className='mr-2'>👥</span> Only 10 spots left
           </div>
         </motion.div>
       </div>
