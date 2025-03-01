@@ -103,13 +103,13 @@ export default function ContactUs () {
         {/* Contact Info */}
         <div className='mt-10 text-center text-white/80 space-y-4'>
           <p className='flex items-center justify-center gap-2'>
-            <Mail size={20} /> support@surfingcompany.com
+            <Mail size={20} /> admin@breakawaysurf.co.uk
           </p>
           <p className='flex items-center justify-center gap-2'>
-            <Phone size={20} /> +1 234 567 890
+            <Phone size={20} /> +44 7415753196
           </p>
           <p className='flex items-center justify-center gap-2'>
-            <MapPin size={20} /> Malibu Beach, CA
+            <MapPin size={20} /> Bristol United Kingdom
           </p>
         </div>
       </motion.div>

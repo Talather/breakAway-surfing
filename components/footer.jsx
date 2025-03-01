@@ -9,6 +9,7 @@ import {
   Facebook,
   Twitter,
   Instagram,
+  Linkedin,
   CheckCircle
 } from 'lucide-react'
 
@@ -65,7 +66,7 @@ export default function Footer () {
             >
               <Mail size={22} />
               <span className='hover:text-yellow-400 transition-all'>
-                hello@surfshop.com
+               admin@breakawaysurf.co.uk
               </span>
             </motion.div>
             <motion.div
@@ -74,7 +75,7 @@ export default function Footer () {
             >
               <Phone size={22} />
               <span className='hover:text-yellow-400 transition-all'>
-                1-800-239-1472
+               +44 7415753196
               </span>
             </motion.div>
           </div>
@@ -82,10 +83,10 @@ export default function Footer () {
 
         {/* Social Media Icons */}
         <div className='mt-8 flex gap-6'>
-          {[Facebook, Twitter, Instagram].map((Icon, index) => (
+          {[Linkedin, Instagram].map((Icon, index) => (
             <motion.a
               key={index}
-              href='#'
+              href={index===0 ? 'https://www.linkedin.com/company/breakaway-surf/' : 'https://www.instagram.com/breakaway.surf?igsh=MXB5YnA2aXpqZXNvdA=='}
               whileHover={{ scale: 1.2, y: -5 }}
               className='hover:text-yellow-400 transition-all'
             >
